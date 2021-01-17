@@ -249,9 +249,29 @@ img{
 
 /* ===== SKILLS =====*/
 .skills__container{
-  row-gap: 2rem;
-  text-align: center;
+  margin-left: 20%;
+  row-gap: 1rem;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
 }
+
+
+.chha1{
+  width: 90%;
+  float: left;
+  margin-left: -30%;
+}
+
+.chha2{
+  width: 90%;
+  float: right;
+  margin-right: -30%;
+}
+
+
+
+
 .skills__subtitle{
   margin-bottom: var(--mb-2);
 }
@@ -317,13 +337,6 @@ img{
 .skills__ux{
   width: 20%;
 }
-.skills__img{
-  border-radius: .5rem;
-}
-.skills__img2{
-  border-radius: .5rem;
-}
-
 
 /* ===== FOOTER =====*/
 .footer{
