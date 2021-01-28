@@ -25,39 +25,49 @@
 </style>
 </head>
 <body>
+
+
+
   <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v9.0'
-          });
-        };
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v9.0'
+      });
+    };
 
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
-      <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution="setup_tool"
-        page_id="101992821716038">
-      </div>
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat"
+    attribution="setup_tool"
+    page_id="101992821716038">
+  </div>
+
+
+
+
+
+
+
     <header class="text-gray-600 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a href="#" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
           <img style="margin-left: 10%;" src="./images/ankurCodesLogo.svg" alt="" height="10%" width="10%">     
           <span class="ml-3 text-xl">Ankur Gajurel</span>
           </a>
-          <nav style="margin-right: 3%;" class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <nav style="margin-right: 3%; color: black;" class="md:ml-auto flex flex-wrap items-center text-base justify-center">
             <a href="./index.html" class="mr-5 hover:text-gray-900">Home</a>
-            <a href="./interLinks/about.html" class="mr-5 hover:text-gray-900">About</a>
-            <a href="./interLinks/courses.html" class="mr-5 hover:text-gray-900">Courses</a>
+            <a href="#about" class="mr-5 hover:text-gray-900">About</a>
+            <a href="./interLinks/resume.html" class="mr-5 hover:text-gray-900">Resume</a>
             <a href="https://copyassignment.com/author/ankur" class="mr-5 hover:text-gray-900">Blogs</a>
             <a href="./interLinks/contact.html" class="mr-5 hover:text-gray-900">Contact</a>
           </nav>
@@ -94,7 +104,7 @@
 
         <div class="about__container bd-grid">
             <div class="about__img">
-                <img src="./images/ankur.png" alt="">
+                <img src="./images/ankur.png" alt="" style="border-radius: 50%;">
             </div>
             
             <div>
@@ -124,7 +134,7 @@
 
 
     <!--===== SKILLS =====-->
-    <section class="skills section" id="skills">
+    <section class="skills section" id="skills" style="color: black;">
         <h2 class="section-title">Skills</h2>
 
         <div class="skills__container">          
